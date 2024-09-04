@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Waste Management System</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #0056b3;
+            padding: 10px 0;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar ul li {
+            position: relative;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #004080;
+            color: #fff;
+            border-radius: 4px;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .main-content h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .main-content p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Hover Animation */
+        .hover-effect {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .hover-effect:hover {
+            transform: scale(1.1);
+            background-color: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Smart Waste Management System</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content" id="home">
+        <h1>Welcome to Smart Waste Management</h1>
+        <p>Our system uses advanced technology to optimize waste collection and management, making our cities cleaner and greener.</p>
+        <a href="#services" class="hover-effect">Learn More</a>
+    </div>
+
+    <div class="main-content" id="about">
+        <h1>About Us</h1>
+        <p>We are dedicated to creating sustainable solutions for waste management through the use of smart technology.</p>
+    </div>
+
+    <div class="main-content" id="services">
+        <h1>Our Services</h1>
+        <p>We offer a range of services including waste collection, recycling, and monitoring solutions.</p>
+    </div>
+
+    <div class="main-content" id="contact">
+        <h1>Contact Us</h1>
+        <p>Get in touch with us for more information on our services and how we can help your community.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Smart Waste Management System. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth Scrolling Effect
+        document.querySelectorAll('.navbar a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
